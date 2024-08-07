@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       
+        let theList = ['Laurence', 'Svekis', true, 35, null, undefined, { test: 'one', score: 55 }, ['one', 'two']];
+        let theList1 = theList.shift(0);
+        let theList2 = theList.pop();
+        let theList3 = theList.unshift("FIRST");
+        let theList4 = theList.pop();
+        let theList5 = theList.pop();
+        let theList6 = theList.pop();
+        let theList7 = theList.pop();
+        let theList8 = theList.pop();
+        let theList9 = theList.push("MIDDLE");
+        let theList10 = theList.push("hello World");
+        let theList11 = theList.push("LAST");
+        console.log(theList);
+
+        let inventory = []
+        let item1 = {
+            name: "Huawei",
+            model: "P70",
+            cost: "R24 000.00",
+            quantity: 2
+        }
+        let item2 = {
+            name: "Nokia",
+            model: 3310,
+            cost: "R300",
+            quantity: 2
+        }
+        let item3 = {
+            name: "BlackBerry",
+            model: "Bold9700",
+            cost: "R4000",
+            quantity: 2
+        }
+
+        inventory.push(item1, item2, item3);
+        console.log(inventory);
+        console.log(inventory[0].name);
+        
+    </script>
+</body>
+
+</html>
